@@ -1,4 +1,4 @@
-cookiecutter-flask
+cookiecutter-mesa
 ==================
 
 A Mesa template for [cookiecutter](https://github.com/audreyr/cookiecutter).
