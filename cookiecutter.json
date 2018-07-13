@@ -1,0 +1,24 @@
+{
+    "full_name": "Firstname Lastname",
+    "email": "example@example.com",
+    "project_name": "Mesa Boilerplate",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "scheduler": [
+        "BaseScheduler",
+        "RandomActivation",
+        "SimultaneousActivation",
+        "StagedActivation"
+    ],
+    "project_short_description": "Agent based simulation model build on Mesa framework",
+    "version": "0.1.0",
+    "open_source_license": [
+        "MIT license",
+        "BSD license",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "Not open source"
+    ],
+    "agent_name": "{{cookiecutter.project_slug.title().replace('_', '')}}Agent"
+    
+}
