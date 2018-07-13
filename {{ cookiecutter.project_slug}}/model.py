@@ -1,13 +1,15 @@
-from mesa.time import {{  cookiecutter.scheduler  }}
-from mesa.model import Model
-from agents import {{  cookiecutter.agent_name  }}
 from mesa.datacollection import DataCollector
+from mesa.model import Model
+from mesa.time import {{  cookiecutter.scheduler  }}
+
+from agents import {{  cookiecutter.agent_name  }}
+
 
 class MoneyModel(Model):
-    """A model with some number of agents."""
+    """A model"""
 
     def __init__(self, *args, **kwargs):
-        self.schedule = {{ cookiecutter.scheduler }}(model=self)
+        self.schedule = {{  cookiecutter.scheduler  }}(model=self)
         self.running = True
         self.datacollector = DataCollector()
  
